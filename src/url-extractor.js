@@ -12,7 +12,9 @@ URLExtractor.extract = function (input, sourceType) {
         throw new Error('Unknown source type.');
     }
 
-    return urls;
+    return urls.filter(function (value, index, self) {
+        return self.indexOf(value) === index;
+    });
 };
 
 URLExtractor._fromMarkdown = function (input) {

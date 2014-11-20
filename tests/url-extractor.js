@@ -12,6 +12,16 @@ describe('URLExtractor.extract', function () {
             URLExtractor.extract('', 'test');
         }).to.throw(Error, 'Unknown source type.');
     });
+    it('returns matched URLs', function () {
+        var urls = URLExtractor.extract('http://gajus.com/a http://gajus.com/b http://gajus.com/c', URLExtractor.SOURCE_TYPE_MARKDOWN);
+
+        expect(urls).to.deep.equal(['http://gajus.com/a', 'http://gajus.com/b', 'http://gajus.com/c']);
+    });
+    it('returns only unique URLs', function () {
+        var urls = URLExtractor.extract('http://gajus.com/a http://gajus.com/b http://gajus.com/b', URLExtractor.SOURCE_TYPE_MARKDOWN);
+
+        expect(urls).to.deep.equal(['http://gajus.com/a', 'http://gajus.com/b']);
+    });
 });
 describe('URLExtractor._fromMarkdown', function () {
     it('extracts URLs from image definition', function () {
