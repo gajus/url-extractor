@@ -1,6 +1,10 @@
 var URLExtractor = {},
     marked = require('marked');
 
+/**
+ * @param {String} input
+ * @param {URLExtractor.SOURCE_TYPE_MARKDOWN} sourceType
+ */
 URLExtractor.extract = function (input, sourceType) {
     var urls;
 
@@ -17,6 +21,9 @@ URLExtractor.extract = function (input, sourceType) {
     });
 };
 
+/**
+ * @param {String} input Markdown document.
+ */
 URLExtractor._fromMarkdown = function (input) {
     var renderer = new marked.Renderer(),
         urls = [];
