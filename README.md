@@ -1,15 +1,19 @@
-## URL-Extractor
+<!--
+This file has been generated using GitDown (https://github.com/gajus/gitdown).
+Direct edits to this will be be overwritten. Look for GitDown markup file under ./.gitdown/ path.
+-->
+<h2 id="url-extractor">URL-Extractor</h2>
 
-[![Build Status](https://travis-ci.org/gajus/url-extractor.png?branch=master&decache1)](https://travis-ci.org/gajus/url-extractor)
-[![NPM version](https://badge.fury.io/js/url-extractor.svg)](http://badge.fury.io/js/url-extractor)
+[![Travis build status](http://img.shields.io/travis/gajus/url-extractor/master.svg?style=flat)](https://travis-ci.org/gajus/url-extractor)
+[![NPM version](http://img.shields.io/npm/v/url-extractor.svg?style=flat)](https://www.npmjs.org/package/url-extractor)
 
-## Extract URLs from Markdown
+<h2 id="extract-urls-from-markdown">Extract URLs from Markdown</h2>
 
 ```js
 URLExtractor.source('', URLExtractor.SOURCE_MARKDOWN);
 ```
 
-## Download
+<h2 id="download">Download</h2>
 
 Download using NPM:
 
