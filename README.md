@@ -10,7 +10,7 @@ Direct edits to this will be be overwritten. Look for GitDown markup file under 
 <h2 id="extract-urls-from-markdown">Extract URLs from Markdown</h2>
 
 ```js
-URLExtractor.source('', URLExtractor.SOURCE_MARKDOWN);
+URLExtractor.source('', URLExtractor.SOURCE_TYPE_MARKDOWN);
 ```
 
 <h2 id="download">Download</h2>
