@@ -6,7 +6,7 @@
 ## Extract URLs from Markdown
 
 ```js
-URLExtractor.source('', URLExtractor.SOURCE_MARKDOWN);
+URLExtractor.source('', URLExtractor.SOURCE_TYPE_MARKDOWN);
 ```
 
 ## Download
