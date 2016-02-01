@@ -8,24 +8,32 @@
     "html"
   ],
   "version": "1.0.1",
-  "main": "src/url-extractor.js",
-  "author": "Gajus Kuizinas <gk@anuary.com>",
+  "main": "./dist/urlExtractor.js",
+  "author": {
+    "email": "gajus@gajus.com",
+    "name": "Gajus Kuizinas",
+    "url": "http://gajus.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gajus/url-extractor"
   },
   "license": "BSD-3-Clause",
-  "scrips": {
-    "test": "gulp test"
+  "scripts": {
+    "pragmatist": "pragmatist --es5",
+    "lint": "npm run pragmatist lint",
+    "test": "npm run pragmatist test",
+    "build": "npm run pragmatist build",
+    "watch": "npm run pragmatist watch",
+    "watch-lint": "npm run pragmatist watch-lint",
+    "watch-test": "npm run pragmatist watch-test",
+    "watch-build": "npm run pragmatist watch-build"
   },
   "devDependencies": {
-    "chai": "^1.9.2",
-    "gitdown": "^1.0.6",
-    "gulp": "^3.8.9",
-    "gulp-jshint": "^1.8.6",
-    "gulp-mocha": "^1.1.1"
+    "chai": "^3.5.0",
+    "pragmatist": "^3.0.3"
   },
   "dependencies": {
-    "marked": "^0.3.2"
+    "marked": "^0.3.5"
   }
 }

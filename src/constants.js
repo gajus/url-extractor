@@ -1,0 +1,5 @@
+const SOURCE_TYPE_MARKDOWN = 'SOURCE_TYPE_MARKDOWN_' + Math.random();
+
+export {
+    SOURCE_TYPE_MARKDOWN
+};
