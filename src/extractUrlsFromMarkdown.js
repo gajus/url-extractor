@@ -1,11 +1,8 @@
 import marked from 'marked';
 
 export default (input) => {
-    let renderer,
-        urls;
-
-    renderer = new marked.Renderer();
-    urls = [];
+    const renderer = new marked.Renderer();
+    const urls = [];
 
     renderer.image = (href) => {
         urls.push(href);

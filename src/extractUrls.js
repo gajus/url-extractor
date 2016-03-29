@@ -4,7 +4,7 @@ import {
 } from './constants';
 
 /**
- * @param {String} input
+ * @param {string} input
  * @param {SOURCE_TYPE_*} sourceType
  */
 export default (input, sourceType) => {

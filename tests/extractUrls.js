@@ -19,16 +19,12 @@ describe('extractUrls()', () => {
         }).to.throw(Error, 'Unknown source type.');
     });
     it('returns matched URLs', () => {
-        let urls;
-
-        urls = extractUrls('http://gajus.com/a http://gajus.com/b http://gajus.com/c', SOURCE_TYPE_MARKDOWN);
+        const urls = extractUrls('http://gajus.com/a http://gajus.com/b http://gajus.com/c', SOURCE_TYPE_MARKDOWN);
 
         expect(urls).to.deep.equal(['http://gajus.com/a', 'http://gajus.com/b', 'http://gajus.com/c']);
     });
     it('returns only unique URLs', () => {
-        let urls;
-
-        urls = extractUrls('http://gajus.com/a http://gajus.com/b http://gajus.com/b', SOURCE_TYPE_MARKDOWN);
+        const urls = extractUrls('http://gajus.com/a http://gajus.com/b http://gajus.com/b', SOURCE_TYPE_MARKDOWN);
 
         expect(urls).to.deep.equal(['http://gajus.com/a', 'http://gajus.com/b']);
     });
