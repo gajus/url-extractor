@@ -1,7 +1,7 @@
 # URL-Extractor
 
-[![Travis build status](http://img.shields.io/travis/gajus/url-extractor/master.svg?style=flat)](https://travis-ci.org/gajus/url-extractor)
-[![NPM version](http://img.shields.io/npm/v/url-extractor.svg?style=flat)](https://www.npmjs.org/package/url-extractor)
+[![Travis build status](http://img.shields.io/travis/gajus/url-extractor/master.svg?style=flat-square)](https://travis-ci.org/gajus/url-extractor)
+[![NPM version](http://img.shields.io/npm/v/url-extractor.svg?style=flat-square)](https://www.npmjs.org/package/url-extractor)
 
 ## Extract URLs from Markdown
 
