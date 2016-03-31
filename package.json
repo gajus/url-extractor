@@ -8,7 +8,7 @@
     "html"
   ],
   "version": "2.0.1",
-  "main": "./dist/urlExtractor.js",
+  "main": "./dist/index.js",
   "author": {
     "email": "gajus@gajus.com",
     "name": "Gajus Kuizinas",
